@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Students</title>
+  </head>
+  <body>
+    <h1>Students List</h1>
+
+    {% for student in students %}
+    <p>{{ student.nom }} {{ student.prenom }}</p>
+    {% empty %}
+    <p>No students found</p>
+    {% endfor %}
+  </body>
+</html>
