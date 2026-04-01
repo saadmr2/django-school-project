@@ -3,4 +3,4 @@ from .models import Student
 
 def student_list(request):
     students = Student.objects.all()
-    return render(request, 'student_list.html', {'students': students})
+    return render(request, 'students/students.html', {'students': students})
